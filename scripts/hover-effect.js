@@ -1,4 +1,6 @@
 function start() {
+  if (isMobile()) return;
+
   const templates = document.getElementsByClassName("main-template");
 
   for (let t of templates) {
@@ -6,6 +8,15 @@ function start() {
       rotateElement(e, t);
     });
   }
+}
+
+/**
+ * Checks if target platform is mobile
+ * @returns {boolean}
+ */
+function isMobile() {
+  const regex = /Mobi|Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i;
+  return regex.test(navigator.userAgent);
 }
 
 /**
