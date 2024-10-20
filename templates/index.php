@@ -49,9 +49,9 @@ if(isset($_GET["templateId"])) {
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Dwarf Engine - Templates</title>
 
-  <link rel="stylesheet" href="../styles/main.css">
+  <link rel="stylesheet" href="/<?php echo $HOST_DIRECTORY; ?>/styles/main.css">
 
-  <script src="../scripts/hover-effect.js"></script>
+  <script src="/<?php echo $HOST_DIRECTORY; ?>/scripts/hover-effect.js"></script>
 </head>
 <body onload="start()">
   <?php

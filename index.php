@@ -9,7 +9,7 @@ require_once "./config.php";
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Dwarf Engine</title>
 
-  <link rel="stylesheet" href="./styles/main.css">
+  <link rel="stylesheet" href="/<?php echo $HOST_DIRECTORY; ?>/styles/main.css">
 </head>
 <body>
   <?php
