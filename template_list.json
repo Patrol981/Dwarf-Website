@@ -1,0 +1,25 @@
+{
+  "version": "0.2.0",
+  "templates": [
+    {
+      "templateName": "No Template",
+      "templateDesc": "An Empty Template",
+      "templateFolder": null
+    },
+    {
+      "templateName": "Top-Down Template",
+      "templateDesc": "Setup your project for a top-down style of gameplay",
+      "templateFolder": null
+    },
+    {
+      "templateName": "Third Person Template",
+      "templateDesc": "Create project with animated third person controller character",
+      "templateFolder": "ThirdPersonTemplate"
+    },
+    {
+      "templateName": "Pathfinding Template",
+      "templateDesc": "Template with basic A* example",
+      "templateFolder": null
+    }
+  ]
+}

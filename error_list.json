@@ -1,0 +1,7 @@
+{
+  "errors": {
+    "404": {
+      "description": "Specified template cannot be found."
+    }
+  }
+}

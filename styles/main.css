@@ -1,0 +1,261 @@
+/**********/
+/* COLORS */
+/**********/
+
+:root {
+  --color-yellow: #FFD60A;
+  --color-yellow-secondary: #FFC300;
+
+  --color-white: #FFFFF4;
+
+  --color-black: #000814;
+  --color-black-secondary: #242423;
+
+  --color-blue: #003566;
+
+  --color-red: #d81a20;
+}
+
+/********/
+/* MAIN */
+/********/
+
+html {
+  background-color: var(--color-white);
+
+  margin-top: 4rem;
+
+  text-align: center;
+
+  font-family: 'Courier New', Courier, monospace;
+}
+
+a {
+  text-decoration: none;
+}
+
+a,
+a:visited,
+a:hover,
+a:active {
+  color: inherit;
+}
+
+/***********/
+/* NAVBARS */
+/***********/
+
+.main-nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 4rem;
+
+  display: flex;
+  flex-direction: row-reverse;
+
+  background-color: var(--color-yellow);
+  box-shadow: 0px 4px 20px var(--color-black-secondary);
+}
+
+.main-nav .nav-button {
+  background-color: var(--color-black);
+  color: var(--color-white);
+
+  display: flex;
+  vertical-align: middle;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+
+  min-width: min-content;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  margin-top: .5rem;
+  margin-bottom: .5rem;
+  margin-left: .5rem;
+  margin-right: .5rem;
+
+  border-radius: 14px;
+
+  transition: color, background-color .1s ease-in-out;
+}
+
+.main-nav .nav-button:hover {
+  background-color: var(--color-white);
+  color: var(--color-black);
+  cursor: pointer;
+}
+
+.main-nav .nav-img-container {
+  height: 2rem;
+  width: 2rem;
+
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+  padding-left: .5rem;
+  padding-right: .5rem;
+
+  margin-top: .5rem;
+  margin-bottom: .5rem;
+  margin-left: .5rem;
+  margin-right: .5rem;
+
+  background-color: var(--color-white);
+  box-shadow: 1px 2px 7px var(--color-black-secondary);
+  border-radius: 24px;
+}
+
+.main-nav img {
+  height: 100%;
+  width: auto;
+
+  transition: transform .5s ease-in-out;
+}
+
+.main-nav img:hover {
+  transform: rotateZ(360deg);
+}
+
+/************/
+/* TEMPLATE */
+/************/
+
+.template-holder {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  vertical-align: middle;
+  align-items: center;
+  align-content: center;
+}
+
+.main-template {
+  display: flexbox;
+  flex-direction: column;
+  justify-content: center;
+  vertical-align: middle;
+  align-items: center;
+  align-content: center;
+  width: 40em;
+  min-height: 30em;
+
+  margin-top: .5rem;
+  margin-bottom: .5rem;
+  margin-left: .5rem;
+  margin-right: .5rem;
+
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+  padding-left: .5rem;
+  padding-right: .5rem;
+
+  border-radius: 15px;
+  box-shadow: 1px 2px 7px var(--color-black-secondary);
+
+  background-color: var(--color-black-secondary);
+
+  user-select: none;
+
+  transform-style: preserve-3d;
+
+  transition: transform 0.2s ease, --rotateX 0.4s ease, --rotateY 0.4s ease;
+}
+
+.main-template:hover {
+  transform: perspective(5000px) rotateY(var(--rotateX)) rotateX(var(--rotateY));
+  cursor: pointer;
+}
+
+.main-template .template-name {
+  font-size: 4rem;
+  color: var(--color-yellow);
+
+  padding-left: .5rem;
+  padding-right: .5rem;
+}
+
+.main-template .template-desc {
+  font-size: 2rem;
+  color: var(--color-white);
+
+  padding-left: .5rem;
+  padding-right: .5rem;
+}
+
+/*********/
+/* ERROR */
+/*********/
+
+.main-error {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+
+  border-radius: 24px;
+
+  background-color: var(--color-yellow);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  user-select: none;
+}
+
+.main-error .error-name {
+  color: var(--color-black-secondary);
+  font-weight: bold;
+  font-size: large;
+
+  margin-bottom: 0;
+}
+
+.main-error .error-code {
+  color: var(--color-red);
+}
+
+.main-error .error-reason {
+  color: var(--color-black-secondary);
+
+  margin-left: .5rem;
+  margin-right: .5rem;
+}
+
+/***********/
+/* BUTTONS */
+/***********/
+
+.button {
+  background-color: var(--color-black);
+  color: var(--color-white);
+
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+
+  border-radius: 10px;
+
+  width: fit-content;
+
+  transition: all .25s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.button:hover {
+  background-color: var(--color-white);
+  color: var(--color-black);
+
+  cursor: pointer;
+}
